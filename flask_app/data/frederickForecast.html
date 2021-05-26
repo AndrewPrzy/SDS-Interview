@@ -1,0 +1,999 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title></title>
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+body {
+  margin: 5px 5px 5px 5px;
+  background-color: #ffffff;
+}
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal text */
+{
+ font-size: 10pt;
+ font-family: 'Courier New';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.rvts1 /* Heading */
+{
+ font-family: 'Arial';
+ font-weight: bold;
+ color: #0000ff;
+}
+span.rvts2 /* Subheading */
+{
+ font-family: 'Arial';
+ font-weight: bold;
+ color: #000080;
+}
+span.rvts3 /* Keywords */
+{
+ font-family: 'Arial';
+ font-style: italic;
+ color: #800000;
+}
+a.rvts4, span.rvts4 /* Jump 1 */
+{
+ color: #008000;
+ text-decoration: underline;
+}
+a.rvts5, span.rvts5 /* Jump 2 */
+{
+ font-family: 'Arial';
+ color: #008000;
+ text-decoration: underline;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Paragraph Style */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1 /* Centered */
+{
+ text-align: center;
+}
+--></style>
+</head>
+<body>
+
+<p><br></p>
+<div><table width="100%" border=1 cellpadding=1 cellspacing=2 style="background-color: #ffffff;">
+<tr valign=top>
+<td style="border-style: inset;">
+<p><span class=rvts1>Name</span></p>
+</td>
+<td style="border-style: inset;">
+<p><span class=rvts1>Date time</span></p>
+</td>
+<td style="border-style: inset;">
+<p><span class=rvts1>Maximum Temperature</span></p>
+</td>
+<td style="border-style: inset;">
+<p><span class=rvts1>Minimum Temperature</span></p>
+</td>
+<td style="border-style: inset;">
+<p><span class=rvts1>Temperature</span></p>
+</td>
+<td style="border-style: inset;">
+<p><span class=rvts1>Wind Chill</span></p>
+</td>
+<td style="border-style: inset;">
+<p><span class=rvts1>Heat Index</span></p>
+</td>
+<td style="border-style: inset;">
+<p><span class=rvts1>Chance Precipitation (%)</span></p>
+</td>
+<td style="border-style: inset;">
+<p><span class=rvts1>Precipitation</span></p>
+</td>
+<td style="border-style: inset;">
+<p><span class=rvts1>Snow</span></p>
+</td>
+<td style="border-style: inset;">
+<p><span class=rvts1>Snow Depth</span></p>
+</td>
+<td style="border-style: inset;">
+<p><span class=rvts1>Wind Speed</span></p>
+</td>
+<td style="border-style: inset;">
+<p><span class=rvts1>Wind Direction</span></p>
+</td>
+<td style="border-style: inset;">
+<p><span class=rvts1>Wind Gust</span></p>
+</td>
+<td style="border-style: inset;">
+<p><span class=rvts1>Visibility</span></p>
+</td>
+<td style="border-style: inset;">
+<p><span class=rvts1>Cloud Cover</span></p>
+</td>
+<td style="border-style: inset;">
+<p><span class=rvts1>Relative Humidity</span></p>
+</td>
+<td style="border-style: inset;">
+<p><span class=rvts1>Conditions</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>Frederick</p>
+</td>
+<td style="border-style: inset;">
+<p>MD</p>
+</td>
+<td style="border-style: inset;">
+<p>United States</p>
+</td>
+<td style="border-style: inset;">
+<p>05/26/2021</p>
+</td>
+<td style="border-style: inset;">
+<p>90.1</p>
+</td>
+<td style="border-style: inset;">
+<p>74</p>
+</td>
+<td style="border-style: inset;">
+<p>83.1</p>
+</td>
+<td style="border-style: inset;"><br>
+</td>
+<td style="border-style: inset;">
+<p>93.8</p>
+</td>
+<td style="border-style: inset;">
+<p>57</p>
+</td>
+<td style="border-style: inset;">
+<p>0.12</p>
+</td>
+<td style="border-style: inset;">
+<p>0</p>
+</td>
+<td style="border-style: inset;">
+<p>0</p>
+</td>
+<td style="border-style: inset;">
+<p>8</p>
+</td>
+<td style="border-style: inset;">
+<p>237.5</p>
+</td>
+<td style="border-style: inset;">
+<p>15</p>
+</td>
+<td style="border-style: inset;">
+<p>10.9</p>
+</td>
+<td style="border-style: inset;">
+<p>66.3</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>Frederick</p>
+</td>
+<td style="border-style: inset;">
+<p>MD</p>
+</td>
+<td style="border-style: inset;">
+<p>United States</p>
+</td>
+<td style="border-style: inset;">
+<p>05/27/2021</p>
+</td>
+<td style="border-style: inset;">
+<p>83</p>
+</td>
+<td style="border-style: inset;">
+<p>67</p>
+</td>
+<td style="border-style: inset;">
+<p>74.2</p>
+</td>
+<td style="border-style: inset;"><br>
+</td>
+<td style="border-style: inset;">
+<p>82.8</p>
+</td>
+<td style="border-style: inset;">
+<p>26</p>
+</td>
+<td style="border-style: inset;">
+<p>0.17</p>
+</td>
+<td style="border-style: inset;">
+<p>0</p>
+</td>
+<td style="border-style: inset;">
+<p>0</p>
+</td>
+<td style="border-style: inset;">
+<p>7</p>
+</td>
+<td style="border-style: inset;">
+<p>287.5</p>
+</td>
+<td style="border-style: inset;">
+<p>12.8</p>
+</td>
+<td style="border-style: inset;">
+<p>15</p>
+</td>
+<td style="border-style: inset;">
+<p>33.8</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>Frederick</p>
+</td>
+<td style="border-style: inset;">
+<p>MD</p>
+</td>
+<td style="border-style: inset;">
+<p>United States</p>
+</td>
+<td style="border-style: inset;">
+<p>05/28/2021</p>
+</td>
+<td style="border-style: inset;">
+<p>72.1</p>
+</td>
+<td style="border-style: inset;">
+<p>60.5</p>
+</td>
+<td style="border-style: inset;">
+<p>65.5</p>
+</td>
+<td style="border-style: inset;">
+<p>44.9</p>
+</td>
+<td style="border-style: inset;"><br>
+</td>
+<td style="border-style: inset;">
+<p>87</p>
+</td>
+<td style="border-style: inset;">
+<p>0.31</p>
+</td>
+<td style="border-style: inset;">
+<p>0</p>
+</td>
+<td style="border-style: inset;">
+<p>0</p>
+</td>
+<td style="border-style: inset;">
+<p>7.3</p>
+</td>
+<td style="border-style: inset;">
+<p>64.6</p>
+</td>
+<td style="border-style: inset;">
+<p>13.9</p>
+</td>
+<td style="border-style: inset;">
+<p>1.6</p>
+</td>
+<td style="border-style: inset;">
+<p>74.5</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>Frederick</p>
+</td>
+<td style="border-style: inset;">
+<p>MD</p>
+</td>
+<td style="border-style: inset;">
+<p>United States</p>
+</td>
+<td style="border-style: inset;">
+<p>05/29/2021</p>
+</td>
+<td style="border-style: inset;">
+<p>61.1</p>
+</td>
+<td style="border-style: inset;">
+<p>52.1</p>
+</td>
+<td style="border-style: inset;">
+<p>57</p>
+</td>
+<td style="border-style: inset;">
+<p>40.5</p>
+</td>
+<td style="border-style: inset;"><br>
+</td>
+<td style="border-style: inset;">
+<p>87</p>
+</td>
+<td style="border-style: inset;">
+<p>0.67</p>
+</td>
+<td style="border-style: inset;">
+<p>0</p>
+</td>
+<td style="border-style: inset;">
+<p>0</p>
+</td>
+<td style="border-style: inset;">
+<p>8.7</p>
+</td>
+<td style="border-style: inset;">
+<p>35.2</p>
+</td>
+<td style="border-style: inset;">
+<p>17.2</p>
+</td>
+<td style="border-style: inset;">
+<p>0.2</p>
+</td>
+<td style="border-style: inset;">
+<p>71</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>Frederick</p>
+</td>
+<td style="border-style: inset;">
+<p>MD</p>
+</td>
+<td style="border-style: inset;">
+<p>United States</p>
+</td>
+<td style="border-style: inset;">
+<p>05/30/2021</p>
+</td>
+<td style="border-style: inset;">
+<p>65.9</p>
+</td>
+<td style="border-style: inset;">
+<p>52.1</p>
+</td>
+<td style="border-style: inset;">
+<p>58.5</p>
+</td>
+<td style="border-style: inset;">
+<p>40.8</p>
+</td>
+<td style="border-style: inset;"><br>
+</td>
+<td style="border-style: inset;">
+<p>49</p>
+</td>
+<td style="border-style: inset;">
+<p>0.04</p>
+</td>
+<td style="border-style: inset;">
+<p>0</p>
+</td>
+<td style="border-style: inset;">
+<p>0</p>
+</td>
+<td style="border-style: inset;">
+<p>5.2</p>
+</td>
+<td style="border-style: inset;">
+<p>24</p>
+</td>
+<td style="border-style: inset;">
+<p>15</p>
+</td>
+<td style="border-style: inset;">
+<p>11.9</p>
+</td>
+<td style="border-style: inset;">
+<p>35</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>Frederick</p>
+</td>
+<td style="border-style: inset;">
+<p>MD</p>
+</td>
+<td style="border-style: inset;">
+<p>United States</p>
+</td>
+<td style="border-style: inset;">
+<p>05/31/2021</p>
+</td>
+<td style="border-style: inset;">
+<p>72.1</p>
+</td>
+<td style="border-style: inset;">
+<p>53</p>
+</td>
+<td style="border-style: inset;">
+<p>62.4</p>
+</td>
+<td style="border-style: inset;">
+<p>34.9</p>
+</td>
+<td style="border-style: inset;"><br>
+</td>
+<td style="border-style: inset;">
+<p>12</p>
+</td>
+<td style="border-style: inset;">
+<p>0</p>
+</td>
+<td style="border-style: inset;">
+<p>0</p>
+</td>
+<td style="border-style: inset;">
+<p>0</p>
+</td>
+<td style="border-style: inset;">
+<p>4.3</p>
+</td>
+<td style="border-style: inset;">
+<p>177.7</p>
+</td>
+<td style="border-style: inset;">
+<p>17.2</p>
+</td>
+<td style="border-style: inset;">
+<p>15</p>
+</td>
+<td style="border-style: inset;">
+<p>32.3</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>Frederick</p>
+</td>
+<td style="border-style: inset;">
+<p>MD</p>
+</td>
+<td style="border-style: inset;">
+<p>United States</p>
+</td>
+<td style="border-style: inset;">
+<p>06/01/2021</p>
+</td>
+<td style="border-style: inset;">
+<p>76</p>
+</td>
+<td style="border-style: inset;">
+<p>58</p>
+</td>
+<td style="border-style: inset;">
+<p>66.6</p>
+</td>
+<td style="border-style: inset;"><br>
+</td>
+<td style="border-style: inset;"><br>
+</td>
+<td style="border-style: inset;">
+<p>13</p>
+</td>
+<td style="border-style: inset;">
+<p>0</p>
+</td>
+<td style="border-style: inset;">
+<p>0</p>
+</td>
+<td style="border-style: inset;">
+<p>0</p>
+</td>
+<td style="border-style: inset;">
+<p>3.8</p>
+</td>
+<td style="border-style: inset;">
+<p>196.4</p>
+</td>
+<td style="border-style: inset;">
+<p>12.8</p>
+</td>
+<td style="border-style: inset;">
+<p>15</p>
+</td>
+<td style="border-style: inset;">
+<p>49.9</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>Frederick</p>
+</td>
+<td style="border-style: inset;">
+<p>MD</p>
+</td>
+<td style="border-style: inset;">
+<p>United States</p>
+</td>
+<td style="border-style: inset;">
+<p>06/02/2021</p>
+</td>
+<td style="border-style: inset;">
+<p>76.6</p>
+</td>
+<td style="border-style: inset;">
+<p>51.5</p>
+</td>
+<td style="border-style: inset;">
+<p>63.3</p>
+</td>
+<td style="border-style: inset;"><br>
+</td>
+<td style="border-style: inset;"><br>
+</td>
+<td style="border-style: inset;">
+<p>28.6</p>
+</td>
+<td style="border-style: inset;">
+<p>0</p>
+</td>
+<td style="border-style: inset;">
+<p>0</p>
+</td>
+<td style="border-style: inset;">
+<p>0</p>
+</td>
+<td style="border-style: inset;">
+<p>7</p>
+</td>
+<td style="border-style: inset;">
+<p>158</p>
+</td>
+<td style="border-style: inset;">
+<p>15.2</p>
+</td>
+<td style="border-style: inset;">
+<p>15</p>
+</td>
+<td style="border-style: inset;">
+<p>98.3</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>Frederick</p>
+</td>
+<td style="border-style: inset;">
+<p>MD</p>
+</td>
+<td style="border-style: inset;">
+<p>United States</p>
+</td>
+<td style="border-style: inset;">
+<p>06/03/2021</p>
+</td>
+<td style="border-style: inset;">
+<p>76.7</p>
+</td>
+<td style="border-style: inset;">
+<p>54.2</p>
+</td>
+<td style="border-style: inset;">
+<p>65.9</p>
+</td>
+<td style="border-style: inset;"><br>
+</td>
+<td style="border-style: inset;"><br>
+</td>
+<td style="border-style: inset;">
+<p>71.4</p>
+</td>
+<td style="border-style: inset;">
+<p>0.05</p>
+</td>
+<td style="border-style: inset;">
+<p>0</p>
+</td>
+<td style="border-style: inset;">
+<p>0</p>
+</td>
+<td style="border-style: inset;">
+<p>9.2</p>
+</td>
+<td style="border-style: inset;">
+<p>157.6</p>
+</td>
+<td style="border-style: inset;">
+<p>24.4</p>
+</td>
+<td style="border-style: inset;">
+<p>7.5</p>
+</td>
+<td style="border-style: inset;">
+<p>97.9</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>Frederick</p>
+</td>
+<td style="border-style: inset;">
+<p>MD</p>
+</td>
+<td style="border-style: inset;">
+<p>United States</p>
+</td>
+<td style="border-style: inset;">
+<p>06/04/2021</p>
+</td>
+<td style="border-style: inset;">
+<p>68.8</p>
+</td>
+<td style="border-style: inset;">
+<p>65.6</p>
+</td>
+<td style="border-style: inset;">
+<p>67.6</p>
+</td>
+<td style="border-style: inset;"><br>
+</td>
+<td style="border-style: inset;"><br>
+</td>
+<td style="border-style: inset;">
+<p>71.4</p>
+</td>
+<td style="border-style: inset;">
+<p>0.85</p>
+</td>
+<td style="border-style: inset;">
+<p>0</p>
+</td>
+<td style="border-style: inset;">
+<p>0</p>
+</td>
+<td style="border-style: inset;">
+<p>7.8</p>
+</td>
+<td style="border-style: inset;">
+<p>193.4</p>
+</td>
+<td style="border-style: inset;">
+<p>29.3</p>
+</td>
+<td style="border-style: inset;">
+<p>0.4</p>
+</td>
+<td style="border-style: inset;">
+<p>100</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>Frederick</p>
+</td>
+<td style="border-style: inset;">
+<p>MD</p>
+</td>
+<td style="border-style: inset;">
+<p>United States</p>
+</td>
+<td style="border-style: inset;">
+<p>06/05/2021</p>
+</td>
+<td style="border-style: inset;">
+<p>76.6</p>
+</td>
+<td style="border-style: inset;">
+<p>62.7</p>
+</td>
+<td style="border-style: inset;">
+<p>69.4</p>
+</td>
+<td style="border-style: inset;"><br>
+</td>
+<td style="border-style: inset;"><br>
+</td>
+<td style="border-style: inset;">
+<p>47.5</p>
+</td>
+<td style="border-style: inset;">
+<p>0.14</p>
+</td>
+<td style="border-style: inset;">
+<p>0</p>
+</td>
+<td style="border-style: inset;">
+<p>0</p>
+</td>
+<td style="border-style: inset;">
+<p>4.3</p>
+</td>
+<td style="border-style: inset;">
+<p>278.8</p>
+</td>
+<td style="border-style: inset;">
+<p>11.4</p>
+</td>
+<td style="border-style: inset;">
+<p>8.3</p>
+</td>
+<td style="border-style: inset;">
+<p>65.4</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>Frederick</p>
+</td>
+<td style="border-style: inset;">
+<p>MD</p>
+</td>
+<td style="border-style: inset;">
+<p>United States</p>
+</td>
+<td style="border-style: inset;">
+<p>06/06/2021</p>
+</td>
+<td style="border-style: inset;">
+<p>81.6</p>
+</td>
+<td style="border-style: inset;">
+<p>60.3</p>
+</td>
+<td style="border-style: inset;">
+<p>71.4</p>
+</td>
+<td style="border-style: inset;"><br>
+</td>
+<td style="border-style: inset;">
+<p>83.2</p>
+</td>
+<td style="border-style: inset;">
+<p>42.9</p>
+</td>
+<td style="border-style: inset;">
+<p>0</p>
+</td>
+<td style="border-style: inset;">
+<p>0</p>
+</td>
+<td style="border-style: inset;">
+<p>0</p>
+</td>
+<td style="border-style: inset;">
+<p>3.5</p>
+</td>
+<td style="border-style: inset;">
+<p>261.4</p>
+</td>
+<td style="border-style: inset;">
+<p>10.7</p>
+</td>
+<td style="border-style: inset;">
+<p>15</p>
+</td>
+<td style="border-style: inset;">
+<p>33.6</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>Frederick</p>
+</td>
+<td style="border-style: inset;">
+<p>MD</p>
+</td>
+<td style="border-style: inset;">
+<p>United States</p>
+</td>
+<td style="border-style: inset;">
+<p>06/07/2021</p>
+</td>
+<td style="border-style: inset;">
+<p>83.4</p>
+</td>
+<td style="border-style: inset;">
+<p>64.1</p>
+</td>
+<td style="border-style: inset;">
+<p>73.7</p>
+</td>
+<td style="border-style: inset;"><br>
+</td>
+<td style="border-style: inset;">
+<p>86.2</p>
+</td>
+<td style="border-style: inset;">
+<p>52.4</p>
+</td>
+<td style="border-style: inset;">
+<p>0.04</p>
+</td>
+<td style="border-style: inset;">
+<p>0</p>
+</td>
+<td style="border-style: inset;">
+<p>0</p>
+</td>
+<td style="border-style: inset;">
+<p>3.2</p>
+</td>
+<td style="border-style: inset;">
+<p>185.1</p>
+</td>
+<td style="border-style: inset;">
+<p>9.4</p>
+</td>
+<td style="border-style: inset;">
+<p>15</p>
+</td>
+<td style="border-style: inset;">
+<p>82.3</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>Frederick</p>
+</td>
+<td style="border-style: inset;">
+<p>MD</p>
+</td>
+<td style="border-style: inset;">
+<p>United States</p>
+</td>
+<td style="border-style: inset;">
+<p>06/08/2021</p>
+</td>
+<td style="border-style: inset;">
+<p>79.2</p>
+</td>
+<td style="border-style: inset;">
+<p>68.8</p>
+</td>
+<td style="border-style: inset;">
+<p>73.7</p>
+</td>
+<td style="border-style: inset;"><br>
+</td>
+<td style="border-style: inset;"><br>
+</td>
+<td style="border-style: inset;">
+<p>52.4</p>
+</td>
+<td style="border-style: inset;">
+<p>0.12</p>
+</td>
+<td style="border-style: inset;">
+<p>0</p>
+</td>
+<td style="border-style: inset;">
+<p>0</p>
+</td>
+<td style="border-style: inset;">
+<p>4.1</p>
+</td>
+<td style="border-style: inset;">
+<p>237.2</p>
+</td>
+<td style="border-style: inset;">
+<p>10.7</p>
+</td>
+<td style="border-style: inset;">
+<p>11.3</p>
+</td>
+<td style="border-style: inset;">
+<p>98.3</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>Frederick</p>
+</td>
+<td style="border-style: inset;">
+<p>MD</p>
+</td>
+<td style="border-style: inset;">
+<p>United States</p>
+</td>
+<td style="border-style: inset;">
+<p>06/09/2021</p>
+</td>
+<td style="border-style: inset;">
+<p>86.3</p>
+</td>
+<td style="border-style: inset;">
+<p>68.3</p>
+</td>
+<td style="border-style: inset;">
+<p>75.1</p>
+</td>
+<td style="border-style: inset;"><br>
+</td>
+<td style="border-style: inset;">
+<p>91.6</p>
+</td>
+<td style="border-style: inset;">
+<p>47.5</p>
+</td>
+<td style="border-style: inset;">
+<p>0.23</p>
+</td>
+<td style="border-style: inset;">
+<p>0</p>
+</td>
+<td style="border-style: inset;">
+<p>0</p>
+</td>
+<td style="border-style: inset;">
+<p>4.9</p>
+</td>
+<td style="border-style: inset;">
+<p>145</p>
+</td>
+<td style="border-style: inset;">
+<p>17.4</p>
+</td>
+<td style="border-style: inset;">
+<p>6.2</p>
+</td>
+<td style="border-style: inset;">
+<p>88.9</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>Frederick</p>
+</td>
+<td style="border-style: inset;">
+<p>MD</p>
+</td>
+<td style="border-style: inset;">
+<p>United States</p>
+</td>
+<td style="border-style: inset;">
+<p>06/10/2021</p>
+</td>
+<td style="border-style: inset;">
+<p>79.4</p>
+</td>
+<td style="border-style: inset;">
+<p>66.6</p>
+</td>
+<td style="border-style: inset;">
+<p>73.1</p>
+</td>
+<td style="border-style: inset;"><br>
+</td>
+<td style="border-style: inset;"><br>
+</td>
+<td style="border-style: inset;">
+<p>42.9</p>
+</td>
+<td style="border-style: inset;">
+<p>0.26</p>
+</td>
+<td style="border-style: inset;">
+<p>0</p>
+</td>
+<td style="border-style: inset;">
+<p>0</p>
+</td>
+<td style="border-style: inset;">
+<p>6.6</p>
+</td>
+<td style="border-style: inset;">
+<p>234.8</p>
+</td>
+<td style="border-style: inset;">
+<p>18.3</p>
+</td>
+<td style="border-style: inset;">
+<p>8.1</p>
+</td>
+<td style="border-style: inset;">
+<p>92</p>
+</td>
+</tr>
+</table>
+</div>
+
+</body></html>

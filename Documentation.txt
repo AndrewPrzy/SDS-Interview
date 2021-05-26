@@ -1,0 +1,25 @@
+Andrew Przybocki Technical Interview 
+May 26, 2021
+
+Description: I developed this project on a Ubuntu Windows WSL. I used Flask to created the API and used Gunicorn to host it. The user interface is written in HTML, CSS, JavaScript, and PHP and hosted using an apache2 server. I made the majority of my design decisions based on the limited experience I have with web development. I figured I should stick with what I know. 
+
+Note: I did not complete the assignment in the allotted time. I spent the majority of my time debugging the API, trying to get it to serve the frontend with forecast data. I was able to render it within my local VS code enviorment, but not on the deployed apache2 server. 
+
+Requirements:
+
+Install Apache2: 
+https://tubemint.com/install-apache2-with-wsl-on-windows-10/#:~:text=%20Install%20Apache2%20with%20WSL%20on%20Windows%2010,Launch%20your%20preferred%20web%20browser%20and...%20More%20
+
+Install Flask: 
+https://linuxize.com/post/how-to-install-flask-on-ubuntu-20-04/#:~:text=There%20are%20different%20methods%20to%20install%20Flask%20on,as%20flexible%20as%20installing%20in%20a%20virtual%20environment.
+
+Install Gunicorn: 
+https://docs.gunicorn.org/en/stable/install.html
+
+To run this project (Ubuntu):
+1. 'sudo service apache2 start' - (This should get the user interface up and running locally)
+
+2. 'source venv/bin/activate' from within the 'flask_app' folder - (This will enable a virtual enviroment which should keep your workspace clean)
+
+3. 'gunicorn app:app' from the flask_app folder - (This should get the API up and running locally)
+
